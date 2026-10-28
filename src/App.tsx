@@ -1,9 +1,11 @@
+import { MotionConfig } from "framer-motion";
+import { AppShell } from "./components/AppShell";
+
 function App() {
   return (
-    <main className="support-page">
-      <h1>Support</h1>
-      <p>SIS Support Module</p>
-    </main>
+    <MotionConfig reducedMotion="user">
+      <AppShell />
+    </MotionConfig>
   );
 }
 
